@@ -1,5 +1,5 @@
 #!/bin/bash
 
-docker build . -t exnewbie/nginx-ss --build-arg cert_age=3650
+docker build --build-arg cert_age=3650 -t exnewbie/nginx-ss:latest .
 
 docker push exnewbie/nginx-ss
