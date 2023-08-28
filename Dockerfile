@@ -11,7 +11,7 @@ RUN openssl rand -writerand /var/lib/randfile && \
 
 ######################################################################################################################
 
-FROM nginx:latest AS build
+FROM nginx:latest
 
 COPY --from=build /root/ss.key /etc/ssl/private/ss.key
 
